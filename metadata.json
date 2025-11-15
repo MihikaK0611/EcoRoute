@@ -1,0 +1,7 @@
+{
+  "name": "EcoRoute: Sustainable Travel Planner",
+  "description": "EcoRoute is a mobile-first application that provides personalized, low-carbon route recommendations, focusing on sustainable travel options like walking, cycling, and public transport.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
