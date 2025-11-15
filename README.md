@@ -8,7 +8,7 @@ This contains everything you need to run your app locally.
 
 View your app in AI Studio: https://ai.studio/apps/drive/1newXBfZYRmhNhtFlQlkxaQDFHepSyF8-
 
-## Run Locally
+## Run Locally (Web)
 
 **Prerequisites:**  Node.js
 
@@ -18,3 +18,11 @@ View your app in AI Studio: https://ai.studio/apps/drive/1newXBfZYRmhNhtFlQlkxaQ
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Run on Android
+
+**Prerequisites:** Node.js, Android Studio, and the Android SDK.
+
+1.  Make sure you have an Android emulator running or a device connected.
+2.  Run the app:
+    `npx react-native run-android`
