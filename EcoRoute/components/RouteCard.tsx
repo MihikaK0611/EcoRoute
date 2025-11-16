@@ -84,15 +84,6 @@ export const RouteCard: React.FC<RouteCardProps> = ({ route }) => {
             <Text style={styles.detailLabel}>CO₂e</Text>
           </View>
         </View>
-
-        {route.steps && route.steps.length > 0 && (
-          <View style={styles.stepsContainer}>
-            <Text style={styles.stepsTitle}>Steps:</Text>
-            {route.steps.map((step, i) => (
-              <Text key={i} style={styles.stepItem}>• {step}</Text>
-            ))}
-          </View>
-        )}
       </View>
     </View>
   );
@@ -148,8 +139,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     paddingVertical: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: '#e5e7eb',
   },
   detailItem: {
     alignItems: 'center',
@@ -174,18 +163,5 @@ const styles = StyleSheet.create({
   carbonText: {
     fontSize: 18,
     fontWeight: 'bold',
-  },
-  stepsContainer: {
-    marginTop: 16,
-  },
-  stepsTitle: {
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: 8,
-  },
-  stepItem: {
-    color: '#4b5563',
-    fontSize: 14,
-    marginBottom: 4,
   },
 });

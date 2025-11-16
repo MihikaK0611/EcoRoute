@@ -78,3 +78,10 @@ export const LocationIcon: React.FC<IconProps> = ({ size = 24, color = 'currentC
     <Path d="M12 21.32a9.14 9.14 0 0 0 9-9.14A9.14 9.14 0 0 0 12 3a9.14 9.14 0 0 0-9 9.18c0 4.56 3.22 8.44 7.5 9.11" />
   </Svg>
 );
+
+export const SearchIcon: React.FC<IconProps> = ({ size = 24, color = 'currentColor', style }) => (
+    <Svg height={size} width={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={style}>
+        <Circle cx="11" cy="11" r="8" />
+        <Line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </Svg>
+);
