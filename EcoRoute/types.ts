@@ -17,8 +17,25 @@ export interface Location {
 export interface RouteOption {
   mode: TransportMode;
   duration: string;
-  distance: string;
+  distance: string; // This is a formatted string like "10.5 km"
   carbonFootprint: number; // in grams of CO2e
   description: string;
-  overview_polyline: string; // Encoded polyline string for the route path
+  overview_polyline: string; 
+}
+
+// --- New Types for Dashboard & Challenges ---
+
+export interface UserStats {
+  totalDistanceKm: number;
+  weeklyDistanceKm: number;
+  carbonSavedKg: number;
+  badges: string[]; // Array of badge IDs
+}
+
+export interface Badge {
+    id: string;
+    name: string;
+    icon: React.ComponentType<any>; // A react component for the icon
+    description: string;
+    milestone: number; // in km
 }

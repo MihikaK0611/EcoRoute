@@ -85,3 +85,10 @@ export const SearchIcon: React.FC<IconProps> = ({ size = 24, color = 'currentCol
         <Line x1="21" y1="21" x2="16.65" y2="16.65" />
     </Svg>
 );
+
+export const AwardIcon: React.FC<IconProps> = ({ size = 24, color = 'currentColor', style }) => (
+  <Svg height={size} width={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={style}>
+    <Circle cx="12" cy="8" r="7" />
+    <Path d="M8.21 13.89L7 22l5-3 5 3-1.21-8.12" />
+  </Svg>
+);
